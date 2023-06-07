@@ -1,0 +1,36 @@
+﻿@using ESunHomework.Models;
+@model List<ApiDataModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>農會漁會別</th>
+            <th>總部分支機構別</th>
+            <th>金融代號</th>
+            <th>郵遞區號</th>
+            <th>所在縣市</th>
+            <th>住址</th>
+            <th>電話</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.category</td>
+                <td>@item.category2</td>
+                <td>@item.FinancialCode</td>
+                <td>@item.PostalCode</td>
+                <td>@item.City</td>
+                <td>@item.Address</td>
+                <td>@item.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
